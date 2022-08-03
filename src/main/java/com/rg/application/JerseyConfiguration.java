@@ -8,6 +8,9 @@ import com.rg.resource.SampleResource;
 @Component
 public class JerseyConfiguration extends ResourceConfig{
 
+	/**
+	 * Jerysey setup
+	 */
 	public JerseyConfiguration(){
 		register(SampleResource.class);
 	}

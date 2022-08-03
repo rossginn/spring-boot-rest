@@ -19,7 +19,7 @@ public class Main {
 	@Bean
 	public IgniteCache<Integer, HackerBo> hackerCache(){
 		Ignite ignite = Ignition.start();
-		IgniteCache<Integer, HackerBo> hackerCache = ignite.getOrCreateCache("hackerCache");
+		IgniteCache<Integer, HackerBo> hackerCache = ignite.getOrCreateCache("hackerCache?");
 //		ignite.compute().broadcast(()->System.out.println(cache.get(1) + " " + cache.get(2)));
 		return hackerCache;
 	}
